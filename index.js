@@ -119,7 +119,7 @@ async function isYarnIntalled () {
     });
 }
 
-module.exports.isNpmInstalled = isNpmInstalled;
+module.exports.isNpmInstalled = isYarnInstalled;
 
 /**
  * Uninstalls the package `target` from `dest` using given options.
