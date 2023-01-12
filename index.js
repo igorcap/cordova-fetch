@@ -113,7 +113,7 @@ async function resolvePathToPackage (name, basedir) {
  *
  * @return {Promise<string>} Absolute path to npm.
  */
-async function isYarnIntalled () {
+async function isYarnInstalled () {
     return which('yarn').catch(_ => {
         throw new CordovaError('"yarn" command line tool is not installed: make sure it is accessible on your PATH.');
     });
